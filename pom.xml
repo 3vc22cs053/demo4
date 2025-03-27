@@ -21,7 +21,6 @@
                 <executions>
                     <execution>
                         <id>copy-resources</id>
-                        <!-- here the phase you need -->
                         <phase>validate</phase>
                         <goals>
                             <goal>copy-resources</goal>
@@ -30,7 +29,7 @@
                             <outputDirectory>${project.basedir}/docs/extra-resources</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>src/main/resorces</directory>
+                                    <directory>src/main/resources</directory>
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
